@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <ul>
+    <li *ngFor="let animal of animals, let i = index; trackBy:animalTrackerFunction">
+      {{ i }} - {{ animal.name }}
+    </li>
+  </ul>
+
+  <br><br>
+
+  <button (click)="AnadirAnimal()">Añadir animal</button>
+
